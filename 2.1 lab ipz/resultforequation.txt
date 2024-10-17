@@ -1,0 +1,14 @@
+Error: n value is less or equal than 7 
+For x = 1, y = 0.0138889
+For x = 2, y = 0.0555556
+For x = 3, y = 0.125
+For x = 4, y = 0.222222
+For x = 5, y = 0.347222
+Error: n value is less or equal than 7 
+Error: n value is less or equal than 7 
+Error: n value is less or equal than 7 
+For x = 1, y = 0.0138889
+For x = 2, y = 0.0555556
+For x = 3, y = 0.125
+For x = 4, y = 0.222222
+For x = 5, y = 0.347222

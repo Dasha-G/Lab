@@ -1,0 +1,42 @@
+Equation calculated:
+For x = 8 and n = 9, the result is y = 0
+Equation calculated:
+For x = 8 and n = 9, the result is y = 0
+Equation calculated:
+For x = 8 and n = 67, the result is y = 0
+Error: The entered data is not a number
+Equation calculated:
+For x = 98 and n = 9, the result is y = 0
+Equation calculated:
+For x = 4 and n = 9, the result is y = 0.0888889
+Equation calculated:
+For x = 4 and n = 8, the result is y = 0.222222
+Equation calculated:
+For x = 9 and n = 8, the result is y = 0
+Equation calculated:
+For x = 8 and n = 9, the result is y = 0
+Equation calculated:
+For x = 9 and n = 9, the result is y = 0
+Equation calculated:
+For x = 9 and n = 9, the result is y = 0
+Equation calculated:
+For x = 9 and n = 9, the result is y = 0
+Equation calculated:
+For x = 4 and n = 8, the result is y = 0.222222
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: The entered data is not a number 
+Equation calculated:
+For x = 5 and n = 0, the result is y = 0
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Equation calculated:
+For x = 4 and n = 9, the result is y = 0.0888889
+Error: n value is less or equal than 7 
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: Division by zero detected! 
+Error: n value is less or equal than 7 
