@@ -14,7 +14,7 @@ bool isInteger(const string& str) {
     return true;
 }
 
-
+//<3
 bool isValidDouble(const string& str) {
     regex doubleRegex("^[+-]?([0-9]*[.])?[0-9]+$");
     return regex_match(str, doubleRegex);
@@ -102,7 +102,7 @@ int main() {
 
         ofstream out("resultforequation.txt", ios::app);
         if (out.is_open()) {
-            int max_iterations = 1000;
+            int max_iterations = 10000;
             int iteration_count = 0;
 
             for (double x = a; x <= b; x += step) {
