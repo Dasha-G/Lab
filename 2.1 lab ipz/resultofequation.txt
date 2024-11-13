@@ -40,3 +40,10 @@ Error: Division by zero detected!
 Error: Division by zero detected! 
 Error: Division by zero detected! 
 Error: n value is less or equal than 7 
+For x = 1, y = 0.125
+For x = 2, y = 0.25
+For x = 3, y = 0.375
+For x = 4, y = 0.5
+Error. a must be less than or equal to b
+Error. a must be less than or equal to b
+Error. a must be less than or equal to b
