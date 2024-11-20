@@ -6,7 +6,7 @@
 #include <regex>
 
 using namespace std;
-
+// test
 bool isInteger(const string& str) {
     for (char c : str) {
         if (!isdigit(c)) return false;
@@ -14,7 +14,6 @@ bool isInteger(const string& str) {
     return true;
 }
 
-//<3
 bool isValidDouble(const string& str) {
     regex doubleRegex("^[+-]?([0-9]*[.])?[0-9]+$");
     return regex_match(str, doubleRegex);
