@@ -6,7 +6,7 @@
 #include <regex>
 
 using namespace std;
-//comment
+
 bool isInteger(const string& str) {
     for (char c : str) {
         if (!isdigit(c)) return false;
