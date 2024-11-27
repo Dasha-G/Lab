@@ -33,7 +33,9 @@ double calculate_y(double x, int n) {
         for (int j = 0; j <= n; j++) {
             double product = 1.0;
             for (int i = 1; i <= n + 1; i++) {
-                product *= (1.0 / (2 * x) + (3 * i) / (i - j + 1));
+                if (i != j) { 
+                    product *= (1.0 / (2 * x) + (3.0 * i) / (i - j));
+                }
             }
             sum += product;
         }
