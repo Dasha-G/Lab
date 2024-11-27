@@ -63,46 +63,47 @@ int main() {
     int num;
 
     while (true) {
-    start:
-        cout << "Start (enter 0 to stop or integer to start): ";
-        cin >> num;
+        try {
+        start:
+            cout << "Start (enter 0 to stop or integer to start): ";
+            cin >> num;
 
-        if (num == 0) {
-            break;
-        }
+            if (num == 0) {
+                break;
+            }
 
-        
-        a = getValidDoubleInput("Enter the range start (a): ");
+            a = getValidDoubleInput("Enter the range start (a): ");
 
-    sstart:
-        
-        b = getValidDoubleInput("Enter the range end (b): ");
-        if (a > b) {
-            cout << "Error. a must be less than or equal to b" << endl;
-            goto sstart;
-        }
+        sstart:
+            b = getValidDoubleInput("Enter the range end (b): ");
+            if (a > b) {
+                cout << "Error. a must be less than or equal to b" << endl;
+                goto sstart;
+            }
 
-    ssstart:
-        
-        step = getValidDoubleInput("Enter the step value: ");
-        if (step <= 0) {
-            cout << "Invalid input. Step must be greater than 0: ";
-            goto ssstart;
-        }
+        ssstart:
+            step = getValidDoubleInput("Enter the step value: ");
+            if (step <= 0) {
+                cout << "Invalid input. Step must be greater than 0: ";
+                goto ssstart;
+            }
 
-        string n_str;
-    nv:
-        cout << "Enter the value of n: ";
-        cin >> n_str;
-        if (!isInteger(n_str) || stoi(n_str) <= 7) {
-            cout << "Error: n must be an integer greater than 7." << endl;
-            goto nv;
-        }
+            string n_str;
+        nv:
+            cout << "Enter the value of n: ";
+            cin >> n_str;
+            if (!isInteger(n_str) || stoi(n_str) <= 7) {
+                cout << "Error: n must be an integer greater than 7." << endl;
+                goto nv;
+            }
 
-        int n = stoi(n_str);
+            int n = stoi(n_str);
 
-        ofstream out("resultforequation.txt", ios::app);
-        if (out.is_open()) {
+            ofstream out("resultforequation.txt", ios::app);
+            if (!out.is_open()) {
+                throw runtime_error("Failed to open the file for writing.");
+            }
+
             int max_iterations = 10000;
             int iteration_count = 0;
 
@@ -122,6 +123,18 @@ int main() {
             out.close();
             cout << "Finished processing. Do you want to continue?" << endl;
             goto start;
+        }
+        catch (const runtime_error& e) {
+            cerr << "Runtime error: " << e.what() << endl;
+            cout << "An error occurred. Please try again." << endl;
+        }
+        catch (const exception& e) {
+            cerr << "Exception: " << e.what() << endl;
+            cout << "An unexpected error occurred. Please try again." << endl;
+        }
+        catch (...) {
+            cerr << "An unknown error occurred." << endl;
+            cout << "An unknown error occurred. Please try again." << endl;
         }
     }
 
